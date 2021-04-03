@@ -8,7 +8,33 @@
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
+
+
+<header>
+  <div class="header">
+    <nav class="navigation">
+      <a href="/" class="navbar-logo"> Treasure Hunter's </a>
+      <div class="navbar-right">
+        {{#if loggedIn}}
+        <a href="/dashboard"> Dashboard </a>
+        <button id="logout" > Logout </button>
+        {{else}}
+        <a href="/login"> Login </a>
+        {{/if}}
+      </div>
+    </nav>
+</header>
+
 <body>
+  <main>
+      {{{ body }}}
+    </main>
+    {{#if loggedIn}}
+      <script src="/javascript/logout.js"></script>
+      {{/if}}
+</body>
+
+ {{!-- <body>
   <div class="wrapper">
     <header>
       <h1>
@@ -33,6 +59,5 @@
       {{#if loggedIn}}
       <script src="/javascript/logout.js"></script>
       {{/if}}
-</body>
-
+</body>  --}}
 </html>
