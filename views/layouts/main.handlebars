@@ -9,33 +9,44 @@
 </head>
 
 
-
-<header>
-  <div class="header">
-    <nav class="navigation">
-      <a href="/" class="navbar-logo"> Treasure Hunter's </a>
-      <div class="navbar-right">
-        {{#if loggedIn}}
-        <a href="/dashboard"> Dashboard </a>
-        <a href="/postpage"> Posts </a>
-        <button class = "btn-no-style" id="logout" > Logout </button>
-        {{else}}
-        <a href="/login"> Login </a>
-        <a href="/postpage"> Posts </a>
-        {{/if}}
-      </div>
-    </nav>
+<body>
+<header class = "header" id = "myHeader">
+      <h1>
+        <a href="/" class="navbar-logo"> Treasure Hunter's </a>
+      </h1>
+      <nav>
+        <ul>
+          {{#if loggedIn}}
+          <li>
+            <a href="/dashboard"> Dashboard </a>
+          </li>
+          <li>
+            <a href="/postpage"> Posts </a>
+          </li>
+          <li>
+            <button class = "btn-no-style" id="logout" > Logout </button>
+          </li>
+          {{else}}
+          <li>
+            <a href="/login"> Login </a>
+          </li>
+          <li>
+            <a href="/postpage"> Posts </a>
+          </li>
+          {{/if}}  
+        </ul>
+      </nav>
 </header>
 
-<body>
   <main>
       {{{ body }}}
     </main>
     {{#if loggedIn}}
       <script src="/javascript/logout.js"></script>
       {{/if}}
+      <script src ="/javascript/index.js"></script>
 </body>
-
+</html>
  {{!-- <body>
   <div class="wrapper">
     <header>
@@ -62,4 +73,4 @@
       <script src="/javascript/logout.js"></script>
       {{/if}}
 </body>  --}}
-</html>
+
