@@ -124,6 +124,17 @@ header nav ul li a {
   font-size: 20px;
 }
 
+.header {
+  padding: 10px 16px;
+  background: transparent;
+  color: #f1f1f1;
+}
+
+.headerbg {
+  background: silver;
+  color: red;
+}
+
 .sticky {
   position: fixed;
   top: 0;
@@ -134,11 +145,7 @@ header nav ul li a {
   padding-top: 102px;
 }
 
-.header {
-  padding: 10px 16px;
-  background: transparent;
-  color: #f1f1f1;
-}
+
   
 main {
     flex: 1;
