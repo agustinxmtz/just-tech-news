@@ -6,7 +6,7 @@ A Social Media Application that allows users to Post Products they want from aro
 
 ### Screenshot
 
-<img src = "../public/assets/Arm.png"/>
+<img src = "./public/assets/Arm.png"/>
 
 ### Deployed Application 
 
